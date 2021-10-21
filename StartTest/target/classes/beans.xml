@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <!--<context:component-scan base-package="*"></context:component-scan>-->
+
+    <!--<bean id="dataSource-oracle"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@172.16.6.8:1521:andcdmp"/>
+        &lt;!&ndash;<property name="url" value="jdbc:oracle:thin:@192.168.1.190:1521:andcdmp"/>&ndash;&gt;
+        <property name="username" value="andc_user"/>
+        <property name="password" value="user_andc"/>
+    </bean>-->
+
+    <!-- product -->
+    <!--<bean id="dataSource-mysql"-->
+          <!--class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+        <!--<property name="url" value="jdbc:mysql://rdswg2d2zu1g91uw2k79.mysql.rds.aliyuncs.com:3306/task_ops"/>-->
+        <!--<property name="username" value="task_ops_user"/>-->
+        <!--<property name="password" value="user_ops_task"/>-->
+    <!--</bean>-->
+
+    <bean id="dataSource-mysql-report-config"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+    <bean id="dataSource-mysql-core"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+    <bean id="dataSource-mysql-report"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+    <bean id="dataSource-mysql-yufei-report"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+    <!--海外数据库-->
+    <!--<bean id="dataSource-mysql"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://rm-rj9cf101393vh3pwu.mysql.rds.aliyuncs.com:3306/report_config"/>
+        <property name="username" value="report_conf_user"/>
+        <property name="password" value="user_conf_report@2017"/>
+    </bean>
+
+    <bean id="dataSource-mysql-core"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://rm-rj9178f7al6w3111u.mysql.rds.aliyuncs.com:3306/core"/>
+        <property name="username" value="core_user"/>
+        <property name="password" value="user_core@2017"/>
+    </bean>
+
+    <bean id="dataSource-mysql-report"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://rm-rj9cf101393vh3pwu.mysql.rds.aliyuncs.com:3306/report"/>
+        <property name="username" value="report_user"/>
+        <property name="password" value="user_report@2017"/>
+    </bean>-->
+
+    <!-- local -->
+    <!--<bean id="dataSource-mysql"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://192.168.1.104:3306/task_ops"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </bean>
+
+    <bean id="dataSource-mysql-core"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://192.168.1.104:3306/youlan_dsp"/>
+        <property name="username" value="youlan_dsp_user"/>
+        <property name="password" value="youlanad"/>
+    </bean>
+
+    <bean id="dataSource-mysql-report"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://192.168.1.104:3306/youlan_dsp_report_20160822"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </bean>-->
+
+
+
+
+
+
+
+
+
+    <!--<bean id="dataSource-mysql-report"-->
+    <!--class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+    <!--<property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+    <!--<property name="url" value="jdbc:mysql://192.168.1.104:3306/mc_report_3"/>-->
+    <!--<property name="username" value="datauser"/>-->
+    <!--<property name="password" value="datauser"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="baseDao" class="com.youlan.tags.db.impl.BaseDaoImpl">-->
+    <!--<property name="dataSource">-->
+    <!--<ref bean="dataSource-mysql-core"/>-->
+    <!--</property>-->
+    <!--</bean>-->
+
+    <!--<bean id="dataSource-oracle"-->
+    <!--class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+    <!--<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>-->
+    <!--<property name="url" value="jdbc:oracle:thin:@172.16.6.8:1521:andcdmp"/>-->
+    <!--&lt;!&ndash;<property name="url" value="jdbc:oracle:thin:@192.168.1.190:1521:andcdmp"/>&ndash;&gt;-->
+    <!--<property name="username" value="andc_user"/>-->
+    <!--<property name="password" value="user_andc"/>-->
+    <!--</bean>-->
+
+    <!---->
+    <!--<bean id="druidDataSource-mysql" class="com.alibaba.druid.pool.DruidDataSource"-->
+    <!--init-method="init" destroy-method="close">-->
+    <!--&lt;!&ndash; 基本属性 url、user、password &ndash;&gt;-->
+    <!--<property name="url" value="jdbc:mysql://192.168.1.104:3306/report_config" />-->
+    <!--<property name="username" value="datauser" />-->
+    <!--<property name="password" value="datauser" />-->
+
+    <!--&lt;!&ndash; 配置初始化大小、最小、最大 &ndash;&gt;-->
+    <!--<property name="initialSize" value="1" />-->
+    <!--<property name="minIdle" value="1" />-->
+    <!--<property name="maxActive" value="20" />-->
+
+    <!--&lt;!&ndash; 配置获取连接等待超时的时间 &ndash;&gt;-->
+    <!--<property name="maxWait" value="60000" />-->
+
+    <!--&lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;-->
+    <!--<property name="timeBetweenEvictionRunsMillis" value="60000" />-->
+
+    <!--&lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;-->
+    <!--<property name="minEvictableIdleTimeMillis" value="300000" />-->
+
+    <!--<property name="validationQuery" value="SELECT 'x'" />-->
+    <!--<property name="testWhileIdle" value="true" />-->
+    <!--<property name="testOnBorrow" value="false" />-->
+    <!--<property name="testOnReturn" value="false" />-->
+
+    <!--&lt;!&ndash; 打开PSCache，并且指定每个连接上PSCache的大小 &ndash;&gt;-->
+    <!--&lt;!&ndash;如果用Oracle，则把poolPreparedStatements配置为true，mysql可以配置为false。分库分表较多的数据库，建议配置为false。&ndash;&gt;-->
+    <!--<property name="poolPreparedStatements" value="false" />-->
+    <!--<property name="maxPoolPreparedStatementPerConnectionSize" value="20" />-->
+
+    <!--&lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;-->
+    <!--<property name="filters" value="stat" />-->
+    <!--</bean>-->
+
+
+    <!--<bean id="druidDataSource-oracle" class="com.alibaba.druid.pool.DruidDataSource"-->
+    <!--init-method="init" destroy-method="close">-->
+    <!--&lt;!&ndash; 基本属性 url、user、password &ndash;&gt;-->
+    <!--<property name="url" value="jdbc:oracle:thin:@172.16.6.8:1521:andcdmp" />-->
+    <!--<property name="username" value="andc_user" />-->
+    <!--<property name="password" value="user_andc" />-->
+
+    <!--&lt;!&ndash; 配置初始化大小、最小、最大 &ndash;&gt;-->
+    <!--<property name="initialSize" value="1" />-->
+    <!--<property name="minIdle" value="1" />-->
+    <!--<property name="maxActive" value="20" />-->
+
+    <!--&lt;!&ndash; 配置获取连接等待超时的时间 &ndash;&gt;-->
+    <!--<property name="maxWait" value="60000" />-->
+
+    <!--&lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;-->
+    <!--<property name="timeBetweenEvictionRunsMillis" value="60000" />-->
+
+    <!--&lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;-->
+    <!--<property name="minEvictableIdleTimeMillis" value="300000" />-->
+
+    <!--<property name="validationQuery" value="SELECT 'x' FROM DUAL" />-->
+    <!--<property name="testWhileIdle" value="true" />-->
+    <!--<property name="testOnBorrow" value="false" />-->
+    <!--<property name="testOnReturn" value="false" />-->
+
+    <!--&lt;!&ndash; 打开PSCache，并且指定每个连接上PSCache的大小 &ndash;&gt;-->
+    <!--&lt;!&ndash;如果用Oracle，则把poolPreparedStatements配置为true，mysql可以配置为false。分库分表较多的数据库，建议配置为false。&ndash;&gt;-->
+    <!--<property name="poolPreparedStatements" value="true" />-->
+    <!--<property name="maxPoolPreparedStatementPerConnectionSize" value="20" />-->
+
+    <!--&lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;-->
+    <!--<property name="filters" value="stat" />-->
+    <!--</bean>-->
+
+    <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+    <!--<property name="dataSource">-->
+    <!--<ref bean="dataSource" />-->
+    <!--</property>-->
+    <!--</bean>-->
+</beans>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>StartTest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <!-- youlan -->
+<!--        <dependency>-->
+<!--            <groupId>com.ad.youlan</groupId>-->
+<!--            <artifactId>hadoop-utils</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.ad.youlan</groupId>-->
+<!--            <artifactId>db-utils</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.ad.youlan</groupId>-->
+<!--            <artifactId>taskscheduler.core</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.ad.youlan</groupId>-->
+<!--            <artifactId>hbase-utils</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>hadoop-auth</artifactId>-->
+<!--                    <groupId>org.apache.hadoop</groupId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>hadoop-common</artifactId>-->
+<!--                    <groupId>org.apache.hadoop</groupId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>hadoop-hdfs</artifactId>-->
+<!--                    <groupId>org.apache.hadoop</groupId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>hadoop-mapreduce-client-core</artifactId>-->
+<!--                    <groupId>org.apache.hadoop</groupId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>hadoop-client</artifactId>-->
+<!--                    <groupId>org.apache.hadoop</groupId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.youlanad</groupId>-->
+<!--            <artifactId>nosql_client</artifactId>-->
+<!--            <version>1.0-server-SNAPSHOT</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>httpclient</artifactId>-->
+<!--                    <groupId>org.apache.httpcomponents</groupId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>httpcore</artifactId>-->
+<!--                    <groupId>org.apache.httpcomponents</groupId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.youlan</groupId>-->
+<!--            <artifactId>cheat-sdk</artifactId>-->
+<!--            <version>1.0.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.youlan.data</groupId>-->
+<!--            <artifactId>email-utils</artifactId>-->
+<!--            <version>1.0.0</version>-->
+<!--        </dependency>-->
+
+        <!--spark set-->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+            <version>2.2.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>hadoop-annotations</artifactId>
+                    <groupId>org.apache.hadoop</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>hadoop-common</artifactId>
+                    <groupId>org.apache.hadoop</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>hadoop-hdfs</artifactId>
+                    <groupId>org.apache.hadoop</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>hadoop-mapreduce-client-common</artifactId>
+                    <groupId>org.apache.hadoop</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>hadoop-mapreduce-client-core</artifactId>
+                    <groupId>org.apache.hadoop</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
+                    <groupId>org.apache.hadoop</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>hadoop-mapreduce-client-shuffle</artifactId>
+                    <groupId>org.apache.hadoop</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>hadoop-yarn-api</artifactId>
+                    <groupId>org.apache.hadoop</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.11</artifactId>
+            <version>2.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
+            <version>2.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_2.11</artifactId>
+            <version>2.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql-kafka-0-10_2.11</artifactId>
+            <version>2.4.5</version>
+        </dependency>
+
+        <!-- scala lib -->
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.11.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-compiler</artifactId>
+            <version>2.11.6</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.11.6</version>
+        </dependency>
+
+        <!-- sqoop 是一个在结构化数据和Hadoop之间进行批量数据迁移的工具，结构化数据可以是Mysql、Oracle等RDBMS-->
+        <dependency>
+            <groupId>org.apache.sqoop</groupId>
+            <artifactId>sqoop-client</artifactId>
+            <version>1.99.5</version>
+        </dependency>
+
+        <!-- ali sdk -->
+        <!-- 支持OSS数据源 -->
+        <dependency>
+            <groupId>com.aliyun.emr</groupId>
+            <artifactId>emr-core</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <!-- 支持MNS, ONS, LogService, ODPS数据源 -->
+        <dependency>
+            <groupId>com.aliyun.emr</groupId>
+            <artifactId>emr-sdk_2.10</artifactId>
+            <version>1.1.2</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>httpclient</artifactId>
+                    <groupId>org.apache.httpcomponents</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>2.3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-emr</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+
+        <!-- google protobuf -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+
+        <!-- ali fast json -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.13</version>
+        </dependency>
+
+        <!-- org.apache.poi (excel文件等)-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.15</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.15</version>
+        </dependency>
+
+        <!-- java-->
+        <!-- 异步非阻塞I/O-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.0.25.Final</version>
+        </dependency>
+        <!-- mail-->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.5.2</version>
+        </dependency>
+
+        <!-- log -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.6</version>
+        </dependency>
+
+        <!-- 单元测试 test -->
+        <dependency>
+            <groupId>org.apache.mrunit</groupId>
+            <artifactId>mrunit</artifactId>
+            <version>0.8.0-incubating</version>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>hadoop-core</artifactId>
+                    <groupId>org.apache.hadoop</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.9.0-rc1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>1.4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
+            <version>1.4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- other -->
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>10.10.2.0</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.clearspring</groupId>-->
+<!--            <artifactId>analytics</artifactId>-->
+<!--            <version>2.9.6</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.3.4</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework</groupId>-->
+<!--            <artifactId>spring-orm</artifactId>-->
+<!--            <version>5.3.4</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.8.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+           <version>5.1.35</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-client -->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+    </dependencies>
+
+    <!-- Scala插件的依赖  -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>scala-tools.org</id>
+            <name>Scala-tools Maven2 Repository</name>
+            <url>http://www.scala-lang.org/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <build>
+        <plugins>
+            <!--指定编译版本，剔除或者指定编译的文件-->
+            <!--<plugin>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-compiler-plugin</artifactId>-->
+            <!--<version>3.1</version>-->
+            <!--<configuration>-->
+            <!--<source>1.7</source>-->
+            <!--<target>1.7</target>-->
+            <!--<excludes>-->
+            <!--<exclude>**/*.java</exclude>-->
+            <!--</excludes>-->
+            <!--</configuration>-->
+            <!--</plugin>-->
+            <plugin>
+                <groupId>org.scala-tools</groupId>
+                <artifactId>maven-scala-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

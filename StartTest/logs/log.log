@@ -1,0 +1,73 @@
+2021-09-05 00:59 [com.youlan.stream.report.realtime.configs.Start$]-[INFO] into spark streaming!
+2021-09-05 00:59 [com.youlan.stream.report.realtime.configs.Start$]-[INFO] offsetsConfig: 0
+2021-09-05 00:59 [com.youlan.stream.report.realtime.configs.Start$]-[INFO] checkpointDir: /datas/cp
+2021-09-05 00:59 [com.youlan.stream.report.realtime.configs.Start$]-[INFO] reportGroupId: 1
+2021-09-05 00:59 [org.apache.spark.streaming.Checkpoint]-[WARN] Checkpoint directory /datas/cp does not exist
+2021-09-05 00:59 [configs.GroupModelbuilder$]-[INFO] query ####################################################
+2021-09-05 00:59 [configs.GroupModelbuilder$]-[INFO] tableSql:select * from web_streamingreporttable where status = 1 and task_group = 1
+2021-09-05 00:59 [org.apache.spark.SparkContext]-[INFO] Running Spark version 2.2.0
+2021-09-05 00:59 [org.apache.spark.SparkContext]-[INFO] Submitted application: realtime_report_for_configs
+2021-09-05 00:59 [org.apache.spark.SecurityManager]-[INFO] Changing view acls to: admin
+2021-09-05 00:59 [org.apache.spark.SecurityManager]-[INFO] Changing modify acls to: admin
+2021-09-05 00:59 [org.apache.spark.SecurityManager]-[INFO] Changing view acls groups to: 
+2021-09-05 00:59 [org.apache.spark.SecurityManager]-[INFO] Changing modify acls groups to: 
+2021-09-05 00:59 [org.apache.spark.SecurityManager]-[INFO] SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(admin); groups with view permissions: Set(); users  with modify permissions: Set(admin); groups with modify permissions: Set()
+2021-09-05 00:59 [org.apache.spark.util.Utils]-[INFO] Successfully started service 'sparkDriver' on port 12506.
+2021-09-05 00:59 [org.apache.spark.SparkEnv]-[INFO] Registering MapOutputTracker
+2021-09-05 00:59 [org.apache.spark.SparkEnv]-[INFO] Registering BlockManagerMaster
+2021-09-05 00:59 [org.apache.spark.storage.BlockManagerMasterEndpoint]-[INFO] Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2021-09-05 00:59 [org.apache.spark.storage.BlockManagerMasterEndpoint]-[INFO] BlockManagerMasterEndpoint up
+2021-09-05 00:59 [org.apache.spark.storage.DiskBlockManager]-[INFO] Created local directory at C:\Users\admin\AppData\Local\Temp\blockmgr-6a00c68d-a62b-4852-8190-4e35ec4fbdd6
+2021-09-05 00:59 [org.apache.spark.storage.memory.MemoryStore]-[INFO] MemoryStore started with capacity 4.1 GB
+2021-09-05 00:59 [org.apache.spark.SparkEnv]-[INFO] Registering OutputCommitCoordinator
+2021-09-05 00:59 [org.spark_project.jetty.util.log]-[INFO] Logging initialized @2103ms
+2021-09-05 00:59 [org.spark_project.jetty.server.Server]-[INFO] jetty-9.3.z-SNAPSHOT
+2021-09-05 00:59 [org.spark_project.jetty.server.Server]-[INFO] Started @2147ms
+2021-09-05 00:59 [org.spark_project.jetty.server.AbstractConnector]-[INFO] Started ServerConnector@349d0836{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2021-09-05 00:59 [org.apache.spark.util.Utils]-[INFO] Successfully started service 'SparkUI' on port 4040.
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@48bfb884{/jobs,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@72805168{/jobs/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@27f1bbe0{/jobs/job,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@7004e3d{/jobs/job/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@71a3a190{/stages,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@7c28c1{/stages/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@67ec8477{/stages/stage,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@34cf5a97{/stages/stage/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@ddf20fd{/stages/pool,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@695a69a1{/stages/pool/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@3f36b447{/storage,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@5eeedb60{/storage/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@4a1c0752{/storage/rdd,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@1b32cd16{/storage/rdd/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@61d01788{/environment,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@264c5d07{/environment/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@69cac930{/executors,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@5d39f2d8{/executors/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@55ea2d70{/executors/threadDump,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@175acfb2{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@4e868ef5{/static,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@4690f583{/,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@47b2e9e1{/api,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@37a64f9d{/jobs/job/kill,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@f9b5552{/stages/stage/kill,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.apache.spark.ui.SparkUI]-[INFO] Bound SparkUI to 0.0.0.0, and started at http://192.168.88.1:4040
+2021-09-05 00:59 [org.apache.spark.executor.Executor]-[INFO] Starting executor ID driver on host localhost
+2021-09-05 00:59 [org.apache.spark.util.Utils]-[INFO] Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 12532.
+2021-09-05 00:59 [org.apache.spark.network.netty.NettyBlockTransferService]-[INFO] Server created on 192.168.88.1:12532
+2021-09-05 00:59 [org.apache.spark.storage.BlockManager]-[INFO] Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2021-09-05 00:59 [org.apache.spark.storage.BlockManagerMaster]-[INFO] Registering BlockManager BlockManagerId(driver, 192.168.88.1, 12532, None)
+2021-09-05 00:59 [org.apache.spark.storage.BlockManagerMasterEndpoint]-[INFO] Registering block manager 192.168.88.1:12532 with 4.1 GB RAM, BlockManagerId(driver, 192.168.88.1, 12532, None)
+2021-09-05 00:59 [org.apache.spark.storage.BlockManagerMaster]-[INFO] Registered BlockManager BlockManagerId(driver, 192.168.88.1, 12532, None)
+2021-09-05 00:59 [org.apache.spark.storage.BlockManager]-[INFO] Initialized BlockManager: BlockManagerId(driver, 192.168.88.1, 12532, None)
+2021-09-05 00:59 [org.spark_project.jetty.server.handler.ContextHandler]-[INFO] Started o.s.j.s.ServletContextHandler@12aa4996{/metrics/json,null,AVAILABLE,@Spark}
+2021-09-05 00:59 [org.apache.spark.SparkContext]-[INFO] Invoking stop() from shutdown hook
+2021-09-05 00:59 [org.spark_project.jetty.server.AbstractConnector]-[INFO] Stopped Spark@349d0836{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2021-09-05 00:59 [org.apache.spark.ui.SparkUI]-[INFO] Stopped Spark web UI at http://192.168.88.1:4040
+2021-09-05 00:59 [org.apache.spark.MapOutputTrackerMasterEndpoint]-[INFO] MapOutputTrackerMasterEndpoint stopped!
+2021-09-05 00:59 [org.apache.spark.storage.memory.MemoryStore]-[INFO] MemoryStore cleared
+2021-09-05 00:59 [org.apache.spark.storage.BlockManager]-[INFO] BlockManager stopped
+2021-09-05 00:59 [org.apache.spark.storage.BlockManagerMaster]-[INFO] BlockManagerMaster stopped
+2021-09-05 00:59 [org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint]-[INFO] OutputCommitCoordinator stopped!
+2021-09-05 00:59 [org.apache.spark.SparkContext]-[INFO] Successfully stopped SparkContext
+2021-09-05 00:59 [org.apache.spark.util.ShutdownHookManager]-[INFO] Shutdown hook called
+2021-09-05 00:59 [org.apache.spark.util.ShutdownHookManager]-[INFO] Deleting directory C:\Users\admin\AppData\Local\Temp\spark-0ddf8791-d780-4088-98c3-f07ef7d6ada2
